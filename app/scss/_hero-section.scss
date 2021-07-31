@@ -9,5 +9,76 @@
     background: rgba(167, 139, 250, 0.7);
     mix-blend-mode: normal;
     opacity: 0.22;
+
+    z-index: -1;
+  }
+
+  .hero__navbar {
+    min-height: 10vh;
+    .row {
+      min-height: 10vh;
+      .nav-links {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 6.33143px;
+          list-style: none;
+          text-transform: uppercase;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: #a78bfa;
+          }
+        }
+      }
+    }
+  }
+
+  .hero__center {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .name__sect {
+      h1 {
+        color: #999999;
+        font-weight: 700;
+        font-size: 10rem;
+      }
+    }
+    .paragraph__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .paragraph__sect {
+      width: 554px;
+      height: 145px;
+
+      font-size: 1.8rem;
+      color: #6d6d6d;
+      line-height: 3.6rem;
+      letter-spacing: 0.385714px;
+    }
+
+    .icons {
+      margin-top: 4rem;
+      font-size: 6rem;
+      a {
+        color: #999999;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: #a78bfa;
+        }
+      }
+    }
   }
 }

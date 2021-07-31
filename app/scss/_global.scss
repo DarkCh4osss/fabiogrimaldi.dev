@@ -12,3 +12,15 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
+.row {
+  display: flex;
+}
+
+.col-2 {
+  flex: 50%;
+}
+
+.col-3 {
+  flex: 33.33%;
+}
