@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 .row {
@@ -32,11 +31,26 @@ body {
           flex: 33.33%;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero__center {
+  padding-top: 10vh;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .hero__section .hero__background {
   position: absolute;
-  width: 1599px;
+  width: 1580px;
   height: 769px;
-  left: 321px;
+  left: 325px;
   top: 0px;
   background: rgba(167, 139, 250, 0.7);
   mix-blend-mode: normal;
@@ -94,7 +108,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
+  width: 100%;
 }
 
 .hero__section .hero__center .discover-me__btn {
@@ -187,5 +201,87 @@ body {
 
 .hero__section .hero__center .icons a:hover {
   color: #a78bfa;
+}
+
+.projects__section {
+  min-height: 100vh;
+  padding: 10rem 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__section .row {
+  width: 100%;
+}
+
+.title__sect {
+  text-align: left;
+}
+
+.title__sect h1 {
+  color: #999999;
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+.project__image {
+  background: #a78bfa;
+  mix-blend-mode: normal;
+  opacity: 0.22;
+}
+
+.project__desc h1 {
+  color: #999999;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.project__desc p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 0.385714px;
+  color: #6d6d6d;
+}
+
+.projects__rows .col-2 {
+  margin: 3rem 5rem;
+  padding: 25rem 5rem;
+}
+
+.other-projects {
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.385714px;
+  color: #6d6d6d;
+}
+
+.other-projects span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #a78bfa;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.other-projects span:hover {
+  font-size: 26px;
 }
 /*# sourceMappingURL=styles.css.map */

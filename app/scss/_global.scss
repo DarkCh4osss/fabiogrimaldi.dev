@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .row {
@@ -24,4 +24,14 @@ body {
 
 .col-3 {
   flex: 33.33%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero__center {
+  padding-top: 10vh;
 }
