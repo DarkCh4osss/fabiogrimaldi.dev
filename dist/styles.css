@@ -41,6 +41,10 @@ body {
   padding-top: 10vh;
 }
 
+textarea {
+  resize: none;
+}
+
 .shadow {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -283,5 +287,204 @@ body {
 
 .other-projects span:hover {
   font-size: 26px;
+}
+
+.contact__section {
+  min-height: 100vh;
+  padding: 10rem 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__section .row {
+  width: 100%;
+}
+
+.title__sect {
+  text-align: left;
+}
+
+.title__sect h1 {
+  color: #999999;
+  font-weight: 700;
+  font-size: 8rem;
+}
+
+.contact__form {
+  height: 100%;
+}
+
+.contact__form form input,
+.contact__form form textarea {
+  margin-bottom: 3rem;
+  width: 100%;
+  background: #e4e4e4;
+  border: none;
+}
+
+.contact__form form input::-webkit-input-placeholder,
+.contact__form form textarea::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: left;
+          align-items: left;
+  text-align: left;
+  color: #999999;
+}
+
+.contact__form form input:-ms-input-placeholder,
+.contact__form form textarea:-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: left;
+      align-items: left;
+  text-align: left;
+  color: #999999;
+}
+
+.contact__form form input::-ms-input-placeholder,
+.contact__form form textarea::-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: left;
+      align-items: left;
+  text-align: left;
+  color: #999999;
+}
+
+.contact__form form input::placeholder,
+.contact__form form textarea::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  color: #999999;
+}
+
+.contact__form form input {
+  padding: 2rem 1rem;
+}
+
+.contact__form form textarea {
+  padding: 5rem 1rem;
+}
+
+.contact__form form button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 8.29714px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  background: #a78bfa;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 100%;
+  padding: 2rem 0rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__form form button:hover {
+  color: #a78bfa;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.contact__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__desc p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.385714px;
+  color: #6d6d6d;
+}
+
+.contact__row .col-2 {
+  margin: 3rem 5rem;
+  padding: 25rem 5rem;
+}
+
+.footer__section {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.385714px;
+  color: #6d6d6d;
+  background: #a78bfa38;
+}
+
+.footer__section p {
+  padding: 1rem 0rem;
 }
 /*# sourceMappingURL=styles.css.map */

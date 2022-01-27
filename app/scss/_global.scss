@@ -35,3 +35,7 @@ body {
 .sticky + .hero__center {
   padding-top: 10vh;
 }
+
+textarea {
+  resize: none;
+}
