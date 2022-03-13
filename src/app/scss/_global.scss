@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body.hide {
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  // flex-wrap: wrap;
+}
+
+.col-2 {
+  flex: 50%;
+}
+
+.col-3 {
+  flex: 33.33%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero__center {
+  padding-top: 10vh;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}

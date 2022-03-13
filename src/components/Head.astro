@@ -1,0 +1,55 @@
+---
+import logo192 from "../../public/assets/logo192.png";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+  rel="stylesheet"
+/>
+<meta
+  name="description"
+  content="Fabio Grimaldi is a beginner front-end web developer"
+/>
+<meta
+  prefix="og: http://ogp.me/ns#"
+  property="og:title"
+  content="Fabio Grimaldi | Front End Developer"
+/>
+<meta
+  prefix="og: http://ogp.me/ns#"
+  property="og:description"
+  content="Fabio Grimaldi is a beginner front-end web developer"
+/>
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+<meta
+  prefix="og: http://ogp.me/ns#"
+  property="og:image"
+  content="https://cdn.discordapp.com/attachments/799679376563109938/842053120745668618/logo.png"
+/>
+<link
+  rel="image_src"
+  content="https://cdn.discordapp.com/attachments/799679376563109938/842053120745668618/logo.png"
+/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#a78bfa" />
+<link rel="icon" href={logo192} />
+<title>{title}</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>

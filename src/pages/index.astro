@@ -1,0 +1,25 @@
+---
+import "../dist/styles.css";
+
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
+import Libs from "../components/Libs.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<html lang="en">
+  <head>
+    <Head title={"Fabio Grimaldi | Frontend Developer"} />
+  </head>
+  <body>
+    <Hero />
+    <Projects />
+    <Contact />
+    <Footer />
+    <Libs />
+
+    <script hoist> import "../app/js/main.js"; </script>
+  </body>
+</html>
