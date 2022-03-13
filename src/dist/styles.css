@@ -608,6 +608,10 @@ textarea {
   padding: 1rem 0rem;
 }
 
+body.error {
+  overflow: hidden;
+}
+
 .error-contaier {
   display: -webkit-box;
   display: -ms-flexbox;
