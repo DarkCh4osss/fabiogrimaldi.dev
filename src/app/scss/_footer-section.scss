@@ -25,3 +25,9 @@
 .footer__section p {
   padding: 1rem 0rem;
 }
+
+@media (max-width: 768px) {
+  .footer__section {
+    font-size: 1.4rem;
+  }
+}

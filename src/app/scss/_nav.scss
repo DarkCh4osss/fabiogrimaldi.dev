@@ -33,7 +33,7 @@
     padding: 3rem 0rem;
     cursor: pointer;
     &:hover {
-      color: #a78bfa;
+      color: white;
     }
   }
   clip-path: circle(50px at 0% -10%);
@@ -46,16 +46,21 @@
   height: 100%;
   background: #a78bfa;
   min-height: 10vh;
-  .row {
-    min-height: 10vh;
-    .burger-nav-links {
-      height: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: column;
-    }
+  .burger-hero__nav-container {
+    @include flex(center, center, row);
+    min-height: 100vh;
   }
+  // .row {
+  //   min-height: 10vh;
+  .burger-nav-links {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20rem 0rem;
+  }
+  // }
 }
 
 .shadow {
@@ -65,7 +70,7 @@
 .burger {
   opacity: 1;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 2.5%;
   left: 80%;
   z-index: 10;

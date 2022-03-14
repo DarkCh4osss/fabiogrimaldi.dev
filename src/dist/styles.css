@@ -118,15 +118,28 @@ textarea {
 }
 
 .burger-hero__navbar li:hover {
-  color: #a78bfa;
+  color: white;
 }
 
-.burger-hero__navbar .row {
-  min-height: 10vh;
+.burger-hero__navbar .burger-hero__nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 100vh;
 }
 
-.burger-hero__navbar .row .burger-nav-links {
-  height: 100%;
+.burger-hero__navbar .burger-nav-links {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,6 +152,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 20rem 0rem;
 }
 
 .shadow {
@@ -149,7 +163,7 @@ textarea {
 .burger {
   opacity: 1;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 2.5%;
   left: 80%;
   z-index: 10;
@@ -283,6 +297,8 @@ textarea {
   margin-top: 4rem;
   font-size: 6rem;
   padding-right: 37rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .hero__section .hero__center .icons a {
@@ -301,6 +317,9 @@ textarea {
     width: 75%;
     -webkit-transform: translate(-83%, 0%);
             transform: translate(-83%, 0%);
+  }
+  .hero__section .discover-me__btn {
+    display: none;
   }
   .hero__section .hero__center .name__sect h1 {
     font-size: 7rem;
@@ -324,6 +343,50 @@ textarea {
   }
   .hero__section .icons {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .hero__section .discover-me__btn {
+    margin: 0rem calc(10% - 2rem);
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .hero__section .discover-me__btn {
+    margin: 0rem calc(20% - 2rem);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hero__section .discover-me__btn {
+    margin: 0rem calc(30% - 2rem);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .hero__section .hero__center .name__sect h1 {
+    font-size: 7rem;
+  }
+  .hero__section .hero__center .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__section .hero__center .line {
+    margin-top: 8rem;
+    margin-right: 6rem;
+    width: 238px;
+    height: 1px;
+    background: #d8d8d8;
+  }
+  .hero__section .col-2.paragraph__div .paragraph__sect {
+    width: 100%;
+    text-align: left;
+  }
+  .hero__section .discover-me__btn {
+    margin: 0rem calc(100% - 2rem);
   }
 }
 
@@ -580,6 +643,19 @@ textarea {
   padding: 25rem 5rem;
 }
 
+@media (max-width: 810px) {
+  .contact__section .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__section .row .col-2 {
+    margin: 1rem 0rem;
+    padding: 6rem 0rem;
+  }
+}
+
 .footer__section {
   min-height: 10vh;
   display: -webkit-box;
@@ -608,6 +684,12 @@ textarea {
   padding: 1rem 0rem;
 }
 
+@media (max-width: 768px) {
+  .footer__section {
+    font-size: 1.4rem;
+  }
+}
+
 body.error {
   overflow: hidden;
 }
@@ -628,5 +710,24 @@ body.error {
 .error-contaier h1 {
   font-size: 7rem;
   text-align: right;
+}
+
+.scroll-to-top__btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background: #a78bfa70;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  outline: none;
+  z-index: 100;
+}
+
+.scroll-to-top__btn img {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
 }
 /*# sourceMappingURL=styles.css.map */

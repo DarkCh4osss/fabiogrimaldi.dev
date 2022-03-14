@@ -6,20 +6,18 @@ let controller;
 let sliderScene;
 let pageScene;
 let detailScene;
-
-let copyright = document.querySelector(".copyright");
-let year = new Date().getFullYear();
-
-copyright.innerText = year;
+const scrollTopBtn = document.querySelector(".scroll-to-top__btn");
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
+    burger.classList.add("sticky");
     // navlinks.forEach((navlink) => {
     //   navlink.classList.add("shadow");
     // });
   } else {
     navbar.classList.remove("sticky");
+    burger.classList.remove("sticky");
   }
 });
 
@@ -42,3 +40,7 @@ function navToggle(e) {
 }
 
 burger.addEventListener("click", navToggle);
+
+scrollTopBtn.addEventListener("click", () => {
+  scrollTo({ top: 0, behavior: "smooth" });
+});

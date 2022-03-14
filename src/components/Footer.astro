@@ -1,4 +1,12 @@
+---
+export interface Props {
+  year: number;
+}
+
+const { year } = Astro.props;
+---
+
 <section class="footer__section">
   <p>Designed and built with 💜 by Fabio Grimaldi</p>
-  <p>Fabio Grimaldi • <span class="copyright"></span></p>
+  <p>Fabio Grimaldi • <span class="copyright">{year}</span></p>
 </section>

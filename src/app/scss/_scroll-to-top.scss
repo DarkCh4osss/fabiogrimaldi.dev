@@ -1,0 +1,16 @@
+.scroll-to-top__btn {
+  img {
+    transform: rotateZ(-90deg);
+  }
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background: #a78bfa70;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  outline: none;
+  z-index: 100;
+}

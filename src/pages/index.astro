@@ -7,6 +7,9 @@ import Head from "../components/Head.astro";
 import Hero from "../components/Hero.astro";
 import Libs from "../components/Libs.astro";
 import Projects from "../components/Projects.astro";
+import ScrollButton from "../components/ScrollButton.astro";
+
+let yearVar = new Date().getFullYear();
 ---
 
 <html lang="en">
@@ -14,10 +17,11 @@ import Projects from "../components/Projects.astro";
     <Head title={"Fabio Grimaldi | Frontend Developer"} />
   </head>
   <body>
+    <ScrollButton />
     <Hero />
     <Projects />
     <Contact />
-    <Footer />
+    <Footer year={yearVar} />
     <Libs />
 
     <script hoist> import "../app/js/main.js"; </script>

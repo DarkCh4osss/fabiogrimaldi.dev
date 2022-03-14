@@ -91,6 +91,7 @@
       margin-top: 4rem;
       font-size: 6rem;
       padding-right: 37rem;
+      flex-wrap: nowrap;
       a {
         color: #999999;
         text-decoration: none;
@@ -108,6 +109,9 @@
     .hero__background {
       width: 75%;
       transform: translate(-83%, 0%);
+    }
+    .discover-me__btn {
+      display: none;
     }
     .hero__center {
       .name__sect {
@@ -138,6 +142,61 @@
 
     .icons {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .hero__section {
+    .discover-me__btn {
+      margin: 0rem calc(10% - 2rem);
+    }
+  }
+}
+@media screen and (max-width: 1430px) {
+  .hero__section {
+    .discover-me__btn {
+      margin: 0rem calc(20% - 2rem);
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .hero__section {
+    .discover-me__btn {
+      margin: 0rem calc(30% - 2rem);
+    }
+  }
+}
+@media screen and (max-width: 810px) {
+  .hero__section {
+    .hero__center {
+      .name__sect {
+        h1 {
+          font-size: 7rem;
+        }
+      }
+      .row {
+        flex-direction: column;
+      }
+      .line {
+        margin-top: 8rem;
+        margin-right: 6rem;
+        width: 238px;
+        height: 1px;
+        background: #d8d8d8;
+      }
+    }
+
+    .col-2.paragraph__div {
+      // transform: translate(-10%, 0%);
+      .paragraph__sect {
+        width: 100%;
+        text-align: left;
+        // font-size:
+      }
+    }
+    .discover-me__btn {
+      margin: 0rem calc(100% - 2rem);
     }
   }
 }
