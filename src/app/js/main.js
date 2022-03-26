@@ -21,9 +21,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
-function navToggle(e) {
+async function navToggle(e) {
   if (!e.target.classList.contains("active")) {
-    e.target.classList.add("active");
+    await e.target.classList.add("active");
     gsap.to(".line1", 0.5, { rotate: "45", y: 6, background: "white" });
     gsap.to(".line2", 0.5, { rotate: "-45", y: -6, background: "white" });
     gsap.to(".burger-hero__navbar", 1, {
@@ -31,7 +31,7 @@ function navToggle(e) {
     });
     document.body.classList.add("hide");
   } else {
-    e.target.classList.remove("active");
+    await e.target.classList.remove("active");
     gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "black" });
     gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "black" });
     gsap.to(".burger-hero__navbar", 1, { clipPath: "circle(50px at 0% -10%)" });
