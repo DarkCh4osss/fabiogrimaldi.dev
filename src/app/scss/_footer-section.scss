@@ -26,6 +26,12 @@
   padding: 1rem 0rem;
 }
 
+@media (max-width: 1366px) {
+  .footer__section {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 768px) {
   .footer__section {
     font-size: 1.4rem;

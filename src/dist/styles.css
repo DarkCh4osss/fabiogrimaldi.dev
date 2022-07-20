@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body.hide {
@@ -48,6 +49,12 @@ body.hide {
 
 textarea {
   resize: none;
+}
+
+@media (max-width: 1366px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 767px) {
@@ -177,6 +184,15 @@ textarea {
   margin: 1rem;
   background: black;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .burger {
+    display: block;
+  }
+  .hero__navbar .row {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -310,6 +326,18 @@ textarea {
 
 .hero__section .hero__center .icons a:hover {
   color: #a78bfa;
+}
+
+@media screen and (max-width: 1366px) {
+  .hero__section .hero__center .name__sect h1 {
+    font-size: 8rem;
+  }
+  .hero__section .icons {
+    padding-right: 35rem;
+  }
+  .hero__section .icons a {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -682,6 +710,12 @@ textarea {
 
 .footer__section p {
   padding: 1rem 0rem;
+}
+
+@media (max-width: 1366px) {
+  .footer__section {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 768px) {

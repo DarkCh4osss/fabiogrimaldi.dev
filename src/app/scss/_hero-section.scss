@@ -104,6 +104,25 @@
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .hero__section {
+    .hero__center {
+      .name__sect {
+        h1 {
+          font-size: 8rem;
+        }
+      }
+    }
+
+    .icons {
+      padding-right: 35rem;
+      a {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero__section {
     .hero__background {
