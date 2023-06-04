@@ -1,0 +1,19 @@
+.hero__sect {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .row {
+    padding: 0rem 10rem;
+  }
+  h1 {
+    font-size: 5.5rem;
+    color: $bold_color;
+  }
+  p {
+    font-size: 2rem;
+  }
+  img {
+    width: 750px;
+  }
+}

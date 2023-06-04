@@ -1,0 +1,38 @@
+$bg_color: #ffffff;
+$text_color: #999999;
+$theme_color: #efc7fc;
+$bold_color: #2d2e32;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Poppins;
+  color: $text_color;
+}
+
+h3 {
+  font-size: 3.6rem;
+  color: $bold_color;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text_color;
+}
+
+.row {
+  display: flex;
+}
+
+.col-2 {
+  flex: 50%;
+}

@@ -1,0 +1,31 @@
+nav {
+  width: 100%;
+  min-height: 10vh;
+  padding: 0rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgb(183, 183, 183);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  h3 {
+    cursor: pointer;
+  }
+  ul {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: $bold_color;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $theme_color;
+    }
+  }
+}
